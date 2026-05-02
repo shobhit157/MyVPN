@@ -1,0 +1,44 @@
+# =========================
+# Backend (Spring Boot)
+# =========================
+vpn-backend/target/
+vpn-backend/*.tar
+
+# =========================
+# Client (JavaFX)
+# =========================
+vpn-client/target/
+vpn-client/dist/
+vpn-client/image/
+vpn-client/installer/
+vpn-client/installer-wix/
+vpn-client/install.log
+vpn-client/tools/wg.exe
+# =========================
+# Build artifacts
+# =========================
+*.msi
+*.wixobj
+*.wixpdb
+*.log
+*.obj
+
+# =========================
+# IDE
+# =========================
+.idea/
+.vscode/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Sensitive / local data
+# =========================
+*.conf
+*.txt
+.env
+application.properties

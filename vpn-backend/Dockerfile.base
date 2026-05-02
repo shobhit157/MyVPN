@@ -1,0 +1,10 @@
+FROM eclipse-temurin:17-jre-jammy
+
+RUN apt-get clean && \
+    apt-get update --fix-missing && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    wireguard-tools \
+    iproute2 \
+    iptables \
+    openssh-client \
+    && rm -rf /var/lib/apt/lists/*
