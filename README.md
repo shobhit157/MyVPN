@@ -14,7 +14,7 @@ The system combines a desktop app, backend service, and a Windows helper service
 
 You can download the latest Windows installer from GitHub Releases:
 
-👉 [Download MyVPN Installer (.msi)](https://github.com/your-username/MyVPN/releases)
+👉 [Download MyVPN Installer (.msi)]((https://github.com/shobhit157/MyVPN/releases/tag/v1.0))
 
 **Requirements:**
 
