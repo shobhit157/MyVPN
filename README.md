@@ -14,7 +14,7 @@ The system combines a desktop app, backend service, and a Windows helper service
 
 You can download the latest Windows installer from GitHub Releases:
 
-👉 [Download MyVPN Installer (.msi)]((https://github.com/shobhit157/MyVPN/releases/tag/v1.0))
+👉 [Download MyVPN Installer (.msi)](https://github.com/shobhit157/MyVPN/releases/tag/v1.0)
 
 **Requirements:**
 
@@ -30,17 +30,17 @@ You can download the latest Windows installer from GitHub Releases:
 
 ## 🧠 Architecture
 
-User (JavaFX App)
-↓
-Windows Helper Service (C++)
-↓
-WireGuard (tunnel.dll / wireguard.dll)
-↓
-Spring Boot Backend (Docker on VM)
-↓
-WireGuard Server (wg0)
-↓
-Internet
+User (JavaFX App)  
+↓  
+Windows Helper Service (C++)  
+↓  
+WireGuard (tunnel.dll / wireguard.dll)  
+↓  
+Spring Boot Backend (Docker on VM)  
+↓  
+WireGuard Server (wg0)  
+↓  
+Internet  
 
 ---
 
@@ -58,8 +58,8 @@ Internet
 ## ⚙️ How It Works
 
 1. User clicks **Connect** in the app
-2. Client generates key pair 
-3. Request sent to backend 
+2. Client generates key pair
+3. Request sent to backend
 4. Backend:
 
    * Assigns VPN IP (e.g., 10.8.0.x)
@@ -92,3 +92,4 @@ Packaged as a Windows `.msi` installer:
 * VPN connection working end-to-end
 * Backend deployed with Docker
 * Installer created and tested
+
