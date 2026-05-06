@@ -16,11 +16,43 @@ You can download the latest Windows installer from GitHub Releases:
 
 👉 [Download MyVPN Installer (.msi)](https://github.com/shobhit157/MyVPN/releases/tag/v1.0)
 
-**Requirements:**
+---
+
+## ⚠️ Pre-Requirements
+
+Before downloading and using **MyVPN**, please ensure the following:
+
+### Disable IPv6 (Recommended)
+
+To avoid possible networking issues while using the VPN:
+
+1. Press `Windows + R`
+2. Type:
+
+```text id="jlwm109"
+ncpa.cpl
+```
+
+3. Press Enter
+4. Right-click your active network adapter → **Properties**
+5. Uncheck:
+
+```text id="jlwm110"
+Internet Protocol Version 6 (TCP/IPv6)
+```
+
+6. Click **OK**
+7. Restart the application if already running
+
+### System Requirements
 
 * Windows
+* Internet connection
+* Administrator permission during installation (required for helper service setup)
 
-**Notes:**
+---
+
+## 📝 Notes
 
 * During installation, Windows may show a security prompt. This is expected because the installer sets up a system-level service. You can proceed after reviewing the details.
 * After installation, the **MyVPN app will be available on your Desktop**, and you can launch it directly.
@@ -30,17 +62,17 @@ You can download the latest Windows installer from GitHub Releases:
 
 ## 🧠 Architecture
 
-User (JavaFX App)  
-↓  
-Windows Helper Service (C++)  
-↓  
-WireGuard (tunnel.dll / wireguard.dll)  
-↓  
-Spring Boot Backend (Docker on VM)  
-↓  
-WireGuard Server (wg0)  
-↓  
-Internet  
+User (JavaFX App)
+↓
+Windows Helper Service (C++)
+↓
+WireGuard (tunnel.dll / wireguard.dll)
+↓
+Spring Boot Backend (Docker on VM)
+↓
+WireGuard Server (wg0)
+↓
+Internet
 
 ---
 
@@ -92,4 +124,5 @@ Packaged as a Windows `.msi` installer:
 * VPN connection working end-to-end
 * Backend deployed with Docker
 * Installer created and tested
+
 
